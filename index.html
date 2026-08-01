@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Prueba de Carrusel</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <style>
+    body { background-color: #121212; color: white; font-family: sans-serif; }
+    .swiper-container { width: 100%; max-width: 700px; height: 450px; margin: 30px auto; }
+    .swiper-slide { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+    .swiper-slide img { max-width: 100%; max-height: 300px; object-fit: contain; border-radius: 8px; }
+    .slide-caption { margin-top: 15px; font-weight: 500; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align: center; margin-top: 20px;">Mi Carrusel Online</h2>
+
+  <!-- Tu etiqueta personalizada -->
+  <mi-carrusel color-texto="#ffffff" tamano-texto="18px" velocidad="3000">
+    <slide img="https://nuevodia.com.ve/wp-content/uploads/2023/04/Nicolas-Maduro-Venezuela.jpg" caption="Testimonio 1: Nicolás Maduro"></slide>
+    <slide img="https://wallpapers.com/images/hd/vladimir-putin-with-raised-hand-8lc4lzzio97ale93.jpg" caption="Testimonio 2: Vladimir Putin"></slide>
+    <slide img="https://cdn.britannica.com/55/240255-138-FFDFB3E3/who-is-Ukrainian-president-Volodymyr-Zelensky.jpg" caption="Testimonio 3: Volodymyr Zelensky"></slide>
+  </mi-carrusel>
+
+  <!-- Scripts necesarios -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="mi-carrusel.js"></script>
+
+</body>
+</html>
